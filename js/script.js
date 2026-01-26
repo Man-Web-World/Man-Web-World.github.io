@@ -62,3 +62,40 @@ function revealSections() {
 
 window.addEventListener('scroll', revealSections);
 revealSections(); // ստուգել բեռնման ժամանակ
+
+
+
+// icon reveal
+const icons = document.querySelectorAll('.mirror-icon');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // աշխատի մեկ անգամ
+      }
+    });
+  }, {
+    threshold: 0.4
+  });
+
+  icons.forEach(icon => observer.observe(icon));
+
+
+
+
+  
+
+// text-animation
+
+  const text = document.querySelector('.fade-in-text');
+
+window.addEventListener('scroll', () => {
+  const textTop = text.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if(textTop < windowHeight - 100) { // երբ տեքստը մոտենում է էկրանին
+    text.classList.add('visible');
+  }
+});
+
