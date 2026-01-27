@@ -36,9 +36,10 @@ body {
 }
 
 .countBg h2 {
-    color: white;
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
 }
 
 .aboutBg h2 {
@@ -105,16 +106,14 @@ body {
     justify-content: end;
     align-items: center;
     color: white;
-    padding: 50px;
+   padding: 60px 30px;
 }
-
 
 
 
 .about,
 .details {
     padding: 40px 20px;
-    /* text-align: center; */
 }
 
 .details p {
@@ -156,9 +155,6 @@ h2 {
 }
 
 .heartDiv img {
-    /* display: inline-block; */
-    /* font-size: 24px; */
-    /* color: #e63946; */
     animation: heartbeat 1.4s infinite ease-in-out;
 }
 
@@ -185,15 +181,15 @@ h2 {
 
 
 .fade-in-text {
-  opacity: 0; /* սկզբում թաքնված է */
-  transform: translateY(20px); /* մի փոքր ցածր է սկսում */
+  opacity: 0; 
+  transform: translateY(20px); 
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
 
 .fade-in-text.visible {
   opacity: 1;
-  transform: translateY(0); /* հայտնվելու է բնական դիրքում */
+  transform: translateY(0); 
 }
 
 
@@ -206,6 +202,16 @@ h2 {
 
 
 /*  թվեր*/
+.details .countBg  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 330px 40px 20px 40px
+}
+
+
+
 
 .countdown {
     display: flex;
@@ -218,14 +224,16 @@ h2 {
     padding: 15px 20px;
     border-radius: 12px;
     text-align: center;
-    min-width: 70px;
+    min-width: 80px;
 }
 
 .countdown span {
+    color: #ffffff;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
     font-size: 55px;
     font-weight: lighter;
     display: block;
-    color: white;
 }
 
 .countdown small {
@@ -329,7 +337,7 @@ footer {
 /* section reveal */
 
 .reveal {
-    /* margin-bottom: 20px; */
+   
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease-out;
@@ -341,7 +349,6 @@ footer {
 }
 
 
-/* ----------------- */
 /* new---------------------- */
 
 .info-text {
@@ -355,7 +362,7 @@ footer {
 
 .title {
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 50px;
 }
 
@@ -483,13 +490,73 @@ footer {
   }
 }
 
+
 h3 {
     text-align: center;
+    color: #56514a;
+    font-weight: lighter;
 }
+
+.revealNames {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    color: #56514a;
+    font-size: 55px !important;
+    margin-top: 40px;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.revealNames span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.revealNames.active span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 .colorNmaes {
+    color: #fff !important;
+    font-style: normal;
+
+}
+
+
+
+.image-container img {
+  width: 40%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.logo p {
+    font-size: 14px;
+    color: #8a7c59;
+}
+
+
+
 
 /* =========================
    MOBILE PERFECT (≤768px)
    ========================= */
+
+   @media (max-width: 768px) {
+  .image-container img {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 @media (max-width: 768px) {
     body {
@@ -532,7 +599,6 @@ h3 {
     }
     .countdown {
         display: flex;
-        /* ոչ թե none */
     }
     .gallery img {
         width: 100vw;
@@ -541,7 +607,7 @@ h3 {
         object-fit: cover;
     }
     .logo img {
-        width: 30vw;
+        width: 20vw;
         max-width: 100%;
         height: auto;
         object-fit: cover;
@@ -553,15 +619,22 @@ h3 {
         object-fit: cover;
     }
     .siteIcon span svg {
-        width: 8vw;
+        width: 6vw;
         max-width: 100%;
         height: auto;
         object-fit: cover;
     }
     .countBg h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
-    .aboutBg h2 {
-        font-size: 28px;
+   .overlayAbout h2 {
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+        letter-spacing: 2px;
     }
+    .overlayAbout h2 span {
+        font-size: 40px;
+    }
+
 }

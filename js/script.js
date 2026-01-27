@@ -99,3 +99,28 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// names animation
+
+
+const textElements = document.querySelectorAll('.revealNames');
+
+textElements.forEach(el => {
+  const text = el.textContent;
+  el.textContent = '';
+
+  [...text].forEach((char, i) => {
+    const span = document.createElement('span');
+    span.textContent = char === ' ' ? '\u00A0' : char;
+    span.style.transitionDelay = `${i * 0.08}s`;
+    el.appendChild(span);
+  });
+});
+
+window.addEventListener('scroll', () => {
+  textElements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+});
