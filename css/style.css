@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Noto Serif Armenian", serif;
+    font-family: 'Noto Serif Armenian', serif;
     background: #fff;
     color: #333;
 }
@@ -53,6 +53,14 @@ body {
     background: rgba(0, 0, 0, 0.35);
     color: white;
     padding: 100px 50px;
+}
+
+.details .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+   padding: 300px 50px;
 }
 
 .heroFlex {
@@ -250,7 +258,9 @@ footer {
     overflow: hidden;
 }
 
-
+.split-text-container h1 {
+    line-height: 80px;
+}
 .text-part {
     display: inline-block;
     position: relative;
@@ -278,24 +288,19 @@ footer {
 
 .text-part.center {
     color: #ffffff;
-    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
-    font-size: 60px;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+    font-size: 40px;
     transform: translateX(200%);
     animation-name: slide-in-top;
 }
 
-.amp {
-  font-family: 'PlayFair Display', serif;
-  font-size: 90px;
-  /* color: #d4af37; */
-}
 
 @keyframes slide-in-left {
     0% {
         transform: translateX(-200%);
     }
     100% {
-        transform: translateX(40px);
+        transform: translateX(165px);
     }
 }
 
@@ -304,7 +309,7 @@ footer {
         transform: translateX(200%);
     }
     100% {
-        transform: translateX(40px);
+        transform: translateX(110px);
     }
 }
 
@@ -313,7 +318,7 @@ footer {
         transform: translateX(-200%);
     }
     100% {
-        transform: translateX(40px);
+        transform: translateX(200px);
     }
 }
 
@@ -478,6 +483,9 @@ footer {
   }
 }
 
+h3 {
+    text-align: center;
+}
 
 /* =========================
    MOBILE PERFECT (≤768px)
@@ -492,23 +500,7 @@ footer {
         height: 100vh;
         background-position: center;
     }
-    /* .overlay h1 {
-        font-weight: lighter;
-        font-size: 40px;
-        text-align: center;
-        line-height: 2.2;
-    } */
-    /* .overlay span {
-        font-size: 100px;
-        font-weight: bold;
-        font-family: math;
-    } */
-    /* .overlay p {
-        font-size: 22px;
-        margin: 15px;
-        letter-spacing: 1px;
-    } */
-
+   
    
     /* SECTIONS */
     section {
