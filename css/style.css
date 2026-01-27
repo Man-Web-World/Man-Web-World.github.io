@@ -483,7 +483,13 @@ h2 .colorNmaes {
 
 
 
-
+.hero h1 {
+        color: white;
+        font-size: 60px;
+        /* padding-top: 40px; */
+        margin-top: 1px;
+         text-align: center;
+    }
 /* =========================
    MOBILE PERFECT (≤768px)
    ========================= */
@@ -506,13 +512,7 @@ h2 .colorNmaes {
         background-position: center;
     }
    
-    .hero h1 {
-        color: white;
-        font-size: 60px;
-        /* padding-top: 40px; */
-        margin-top: 1px;
-         text-align: center;
-    }
+    
     /* SECTIONS */
     section {
         padding: 10px 20px;
@@ -625,6 +625,8 @@ h2 .colorNmaes {
         padding: 300px 30px 20px 30px
 }
 
-
+.revealNames {
+    font-size: 35px ;
+}
 
 }
