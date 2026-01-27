@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,6 +22,25 @@ body {
     background: url("../img/new1.JPG") center/cover no-repeat;
     position: relative;
 }
+
+
+
+.logo p {
+    font-size: 14px;
+    color: #8a7c59;
+}
+
+
+
+.hero h1 {
+        color: white;
+        font-size: 50px;
+        padding-top: 10px;
+        margin-top: 1px;
+         text-align: center;
+    }
+
+
 
 .countBg {
     height: 73vh;
@@ -327,7 +346,7 @@ footer {
 
 .row.left {
   justify-content: flex-end;
-  padding-right: 60%;
+  padding-right: 58%;
 }
 
 .row.right {
@@ -476,20 +495,6 @@ h2 .colorNmaes {
 
 
 
-.logo p {
-    font-size: 14px;
-    color: #8a7c59;
-}
-
-
-
-.hero h1 {
-        color: white;
-        font-size: 60px;
-        /* padding-top: 40px; */
-        margin-top: 1px;
-         text-align: center;
-    }
 /* =========================
    MOBILE PERFECT (≤768px)
    ========================= */
@@ -578,7 +583,7 @@ h2 .colorNmaes {
         letter-spacing: 2px;
     }
     .overlayAbout h2 span {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     /*  թվեր*/
